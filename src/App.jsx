@@ -55,6 +55,7 @@ function App() {
       </section>
       
       <PrimeiroComponente/>
+      
       <br />
       
       <div className="ticks"></div>
