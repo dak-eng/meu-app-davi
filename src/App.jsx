@@ -14,8 +14,8 @@ const nome = document.getElementsByName("nome");
   return (
     
   <div id="social">
-    <h1>Qual seu nomi</h1>
-    <input type="text" name="nome" placeholder="Digite seu nome" />
+    <h1>Qual seu nome?</h1>
+    <input type="text" name="nome" placeholder='Digite seu nome...' />
 <br />
     <input 
       type="button" 
