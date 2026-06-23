@@ -173,13 +173,4 @@
     border: 5px solid transparent;
   }
 }
-    .minecraft-img {
-      height: 300px;
-      transition: transform 0.3s ease;
-    }
-    .minecraft-img:hover {
-      transform: translateY(-10px);
-    }
-  .font {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-  }
+
