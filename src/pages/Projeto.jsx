@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 
 function Projeto(){
     const { id } = useParams()
-
+  
     const projetos = {
         1: {
             nome: "projeto 1",
