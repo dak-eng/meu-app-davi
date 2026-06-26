@@ -1,31 +1,30 @@
-import {Botao} from './Componentes/Botao.jsx'
-import { Titulo } from './Componentes/Titulo.jsx'
-import { Hero } from './Componentes/Hero.jsx'
-import { Social } from './Componentes/Social.jsx'
+import { Routes, Route } from 'react-router-dom'
+import  Hom  from './pages/Home.jsx'
+import  Cont  from './pages/Contato.jsx'
+import  Sob  from './pages/Sobre.jsx'
+import  Painel  from './Pages/Painel.jsx'
+import  Projeto  from './Pages/Projeto.jsx'
 import './App.css'
+
 
 
 function App() {
 
   return (
     <>
-      <section id="center">
-        <Hero/>
-        <Titulo/>
-        <Botao/>
-      </section>
-      
-      <br />
-      
-      <div className="ticks"></div>
+  <div>
+     <nav className='navbar'>
+    <Painel />
 
-      <section id="next-steps">
-        <Social/>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+     </nav>
+    <Routes>
+      <Route path="/"element={<Hom />}/>
+      <Route path="/Contato"element={<Cont />}/>
+      <Route path="/Sobre"element={<Sob />}/>
+      <Route path="/Projeto/:id" element={<Projeto />}/>
+    </Routes>
+  </div>
     </>
   )
 }
-export default App
+export default App;
