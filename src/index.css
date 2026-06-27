@@ -162,6 +162,143 @@ body {
   transform: translateY(-1px);
 }
 
+.crud-container {
+  width: min(720px, 90%);
+  margin: 40px auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.crud-container h2 {
+  margin-bottom: 20px;
+  color: #b8c7e0;
+}
+
+.search-input,
+.crud-form input {
+  width: 100%;
+  padding: 14px 10px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #1f1f24;
+  color: #fff;
+  outline: none;
+}
+
+.search-input {
+  margin-bottom: 14px;
+}
+
+.crud-form{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.crud-form input{
+    flex: 1;
+}
+
+.crud-form button{
+    width: 120px;
+}
+
+.crud-form button,
+.user-actions button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background:linear-gradient(145deg, #6c6c7a, #151519) ;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #1c1c22;
+  border: 1px solid #333;
+  border-radius: 14px;
+}
+
+.user-card strong {
+  display: block;
+  color: #c6d5ef;
+}
+
+.user-card span {
+  color: #9ca9bd;
+}
+
+.user-card{
+  transition: .25s ease;
+}
+
+.user-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.user-actions button,
+.crud-form button{
+    transition: .2s;
+}
+
+.user-actions button:hover,
+.crud-form button:hover{
+    transform: scale(1.05);
+}
+
+input:focus{
+    border-color:#919191;
+    box-shadow:0 0 12px rgba(144, 144, 145, 0.4);
+}
+
+.user-actions button:last-child {
+  background:linear-gradient(305deg,#424242,#ff4d4d) ;
+}
+
+.user-card:hover{
+  transform: translateY(-4px);
+  border-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(180, 180, 180, 0.25);
+}
+
+.contador{
+    color:#8fa1c5;
+    margin:15px 0;
+}
+
+@media (max-width: 600px) {
+  .crud-form {
+    grid-template-columns: 1fr;
+  }
+
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 code,
 .counter {
   font-family: var(--mono);
