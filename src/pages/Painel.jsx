@@ -6,10 +6,6 @@ function Painel() {
     <div>
       <h2 className='painel'>Painel</h2>
       <nav>
-      
-        <Link to="/Home">
-          Home
-        </Link>
 
         <Link to="/Sobre">
           Sobre
