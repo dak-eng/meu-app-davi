@@ -8,7 +8,7 @@ createRoot(
   document.getElementById('root')
 ).render(
   <StrictMode>
-    <BrowserRouter>          
+    <BrowserRouter basename="/meu-app-davi">          
       <App />
     </BrowserRouter>
   </StrictMode>,

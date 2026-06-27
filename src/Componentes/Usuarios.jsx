@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import api from "../Services/api";
 
 function Usuarios() {
+    console.log("Componente Usuarios carregou");
     const [usuarios, setUsuarios] = useState([]);
     const [loading, setLoading] = useState(true);
     const [erro, setErro] = useState(null);

@@ -19,7 +19,7 @@ function App() {
 
      </nav>
     <Routes>
-      <Route path="/"element={<Hom /> ,<Usuarios />}/>
+      <Route path="/"element={<><Hom /> <Usuarios /></>}/>
       <Route path="/Contato"element={<Cont />}/>
       <Route path="/Sobre"element={<Sob />}/>
       <Route path="/Projeto/:id" element={<Projeto />}/>
