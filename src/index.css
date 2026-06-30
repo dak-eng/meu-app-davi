@@ -278,8 +278,74 @@ input:focus{
 }
 
 .contador{
-    color:#8fa1c5;
+    color:#ffffff;
     margin:15px 0;
+}
+
+.cep-card{
+    width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background: #1f1f27;
+
+    border: 1px solid #343448;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+
+    animation: aparecer .4s ease;
+}
+
+.cep-card h1{
+    text-align:center;
+    margin-bottom:30px;
+
+    color:#ffffff;
+    font-size:2rem;
+}
+
+.cep-info{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.cep-info p{
+    padding:15px 20px;
+
+    background:#16161d;
+
+    border-left:5px solid #ffffff;
+
+    border-radius:10px;
+
+    color:white;
+    font-size:18px;
+}
+
+.cep-info strong{
+    color:#ffffff;
+}
+
+.cep-erro{
+    color:#ff6868;
+    text-align:center;
+    font-weight:bold;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
 
 @media (max-width: 600px) {

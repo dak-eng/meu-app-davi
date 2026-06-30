@@ -113,11 +113,11 @@ function Usuarios() {
 
             </form>
             <p className="contador">  
-                {usuariosFiltrados.length} usuários encontrados
+                {usuariosFiltrados.slice(0, 3).length} usuários encontrados
                 </p>
             <ul className="user-list">
                 
-                {usuariosFiltrados.map((usuario) => (
+                {usuariosFiltrados.slice(0, 3).map((usuario) => (
                     <li className="user-card" key={usuario.id}>
                         <div>
                         <strong>{usuario.name}</strong>
